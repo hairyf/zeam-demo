@@ -4,7 +4,8 @@ import ClientLayout from '@/layout/Client.vue'
 const routes: RouteRecordRaw[] = [
   {
     path: '/login',
-    component: () => import('@/views/login/index.vue')
+    component: () => import('@/views/login/index.vue'),
+    meta: { title: '登录中心' }
   },
   {
     path: '/client',
@@ -12,11 +13,13 @@ const routes: RouteRecordRaw[] = [
     children: [
       {
         path: 'home',
-        component: () => import('@/views/home/index.vue')
+        component: () => import('@/views/home/index.vue'),
+        meta: { title: '欢迎来到 Zteams' }
       },
       {
         path: 'games',
-        component: () => import('@/views/games/index.vue')
+        component: () => import('@/views/games/index.vue'),
+        meta: { title: 'Zteams 中的所有游戏' }
       },
       {
         path: 'game',

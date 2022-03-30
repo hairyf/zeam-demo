@@ -1,5 +1,9 @@
 <template>
   <div class="flex justify-center items-center">
+    <!-- 阻止浏览器在第一次进入页面时直接塞入账号密码 -->
+    <input class="h-0 w-0 overflow-hidden" type="text" />
+    <input class="h-0 w-0 overflow-hidden" type="password" />
+
     <div class="w-480px bg-primary rounded-md">
       <div class="header"> Zeam 登录 </div>
       <div class="body">

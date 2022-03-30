@@ -6,7 +6,7 @@ import App from './App.vue'
 
 const app = createApp(App)
 
-useAppInitialize(app)
 useAppPlugins(app)
+useAppInitialize(app)
 
 app.mount('#app')
