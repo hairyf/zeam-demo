@@ -10,6 +10,7 @@
   },
   "dependencies": {
     "@hairy/share": "^0.0.2",
+    "@hairy/utils": "^1.0.19",
     "lodash": "^4.17.21",
     "pinia": "^2.0.12",
     "vue": "^3.2.25",

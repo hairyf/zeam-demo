@@ -6,9 +6,11 @@ import vueJsx from '@vitejs/plugin-vue-jsx'
 import path from 'path'
 
 // https://vitejs.dev/config/
-export default defineConfig({
+const config = defineConfig({
   resolve: {
     alias: { '@': path.resolve(__dirname, 'src') }
   },
   plugins: [vue(), WindiCSS(), vueJsx()]
 })
+
+export default config

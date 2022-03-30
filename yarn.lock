@@ -519,6 +519,13 @@
   resolved "https://registry.yarnpkg.com/@hairy/share/-/share-0.0.2.tgz#45b2bbcf4ae7e4b36ed3678a002aa6054cf9f51d"
   integrity sha512-k7OYkoqvm6CNB8AU6DrBkbGESor5Gtj5+TDpxuHFOOiSHEnK1XdNs8d4Nqgp3MecDzLwTSt+x7KS21BO91bi8Q==
 
+"@hairy/utils@^1.0.19":
+  version "1.0.19"
+  resolved "https://registry.yarnpkg.com/@hairy/utils/-/utils-1.0.19.tgz#0747425c3922a4d2ade9d7ce5dd12a7a1a749805"
+  integrity sha512-uOJFpI+W0lAJn9geuGwU29lHxvCibGEjcr2Kdt5AsOP0B69xpkfKtv2DIdAt7pMWJg4pq4ZSH+QUW1Vl4qMqcw==
+  dependencies:
+    dayjs "^1.10.6"
+
 "@humanwhocodes/config-array@^0.5.0":
   version "0.5.0"
   resolved "https://registry.yarnpkg.com/@humanwhocodes/config-array/-/config-array-0.5.0.tgz#1407967d4c6eecd7388f83acf1eaf4d0c6e58ef9"
@@ -1325,6 +1332,11 @@ dargs@^7.0.0:
   version "7.0.0"
   resolved "https://registry.yarnpkg.com/dargs/-/dargs-7.0.0.tgz#04015c41de0bcb69ec84050f3d9be0caf8d6d5cc"
   integrity sha512-2iy1EkLdlBzQGvbweYRFxmFath8+K7+AKB0TlhHWkNuH+TmovaMH/Wp7V7R4u7f4SnX3OgLsU9t1NI9ioDnUpg==
+
+dayjs@^1.10.6:
+  version "1.11.0"
+  resolved "https://registry.yarnpkg.com/dayjs/-/dayjs-1.11.0.tgz#009bf7ef2e2ea2d5db2e6583d2d39a4b5061e805"
+  integrity sha512-JLC809s6Y948/FuCZPm5IX8rRhQwOiyMb2TfVVQEixG7P8Lm/gt5S7yoQZmC8x1UehI9Pb7sksEt4xx14m+7Ug==
 
 debug@^2.6.9:
   version "2.6.9"
