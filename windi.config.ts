@@ -1,6 +1,6 @@
 import { defineConfig } from 'windicss/helpers'
-import { spacing } from '@hairy/share'
 import { colors } from './windi.colors'
+import { spacing } from './windi.utils'
 
 const config = defineConfig({
   theme: {
