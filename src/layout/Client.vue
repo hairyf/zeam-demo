@@ -1,19 +1,27 @@
 <template>
-  <div class="w-80vw min-w-700 h-40px">
-    <div class="header"></div>
+  <div class="container">
+    <client-header />
+    <div class="flex gap-2px h-800">
+      <client-sidebar />
+      <client-body />
+    </div>
   </div>
 </template>
 
 <script lang="ts">
-  import { defineComponent, defineProps } from 'vue-demi'
+  import { defineComponent } from 'vue-demi'
   export default defineComponent({ name: 'ClientLayout' })
 </script>
 <script lang="ts" setup>
-  const props = defineProps({})
+  import ClientHeader from './components/ClientHeader.vue'
+  import ClientSidebar from './components/ClientSidebar.vue'
+  import ClientBody from './components/ClientBody.vue'
 </script>
 
 <style lang="scss" scoped>
-  .header {
-    background-image: linear-gradient(#1f2632, #1f2021);
+  .container {
+    @apply w-80vw min-w-700;
+    @apply rounded-md bg-[#1B1E23];
+    border: solid 1px #bdbdbd;
   }
 </style>

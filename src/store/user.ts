@@ -4,7 +4,8 @@ export const useUserStore = defineStore({
   id: '__user__',
   state: () => ({
     username: '',
-    password: ''
+    password: '',
+    favorites: [] as string[]
   }),
   actions: {},
   getters: {
