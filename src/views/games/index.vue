@@ -1,9 +1,9 @@
 <template>
-  <div class="flex">123</div>
+  <div>game</div>
 </template>
 
 <script lang="ts" setup>
-  const props = defineProps({})
+  const props = defineProps()
 </script>
 
 <style lang="scss" scoped></style>

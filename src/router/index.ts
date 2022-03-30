@@ -13,6 +13,14 @@ const routes: RouteRecordRaw[] = [
       {
         path: 'home',
         component: () => import('@/views/home/index.vue')
+      },
+      {
+        path: 'games',
+        component: () => import('@/views/games/index.vue')
+      },
+      {
+        path: 'game',
+        component: () => import('@/views/game/index.vue')
       }
     ],
     redirect: '/client/home'

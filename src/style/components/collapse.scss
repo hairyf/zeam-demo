@@ -1,0 +1,32 @@
+.n-collapse {
+  .n-collapse-item {
+    border: none !important;
+    padding: 0 !important;
+    margin: 0 !important;
+    .n-collapse-item__content-inner {
+      padding: 0 !important;
+    }
+  }
+  .n-collapse-item__header {
+    .n-collapse-item__header-main,
+    .n-collapse-item-arrow {
+      color: #cae4fb !important;
+    }
+  }
+  .n-collapse-item--active .n-collapse-item__header,
+  .n-collapse-item__header:hover {
+    background-image: none;
+    background-color: #3e4e69;
+    .n-collapse-item__header-main {
+      color: #fff !important;
+    }
+  }
+  .n-collapse .n-collapse-item:first-child > .n-collapse-item__header,
+    .n-collapse-item__header {
+      padding: 5px !important;
+      font-size: 12px !important;
+    }
+  .n-collapse-item__header {
+    background-image: linear-gradient(to right, #292f3b, #23272f);
+  }
+}

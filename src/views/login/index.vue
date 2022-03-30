@@ -21,12 +21,14 @@
 <script lang="ts" setup>
   import { ZButton } from '@/components/button'
   import { ZInput } from '@/components/input'
+  import { useCommonStore } from '@/store/common'
   import { useUserStore } from '@/store/user'
   import { computed, onMounted, reactive } from 'vue'
   import { useRouter } from 'vue-router'
 
   const router = useRouter()
   const userStore = useUserStore()
+  const commonStore = useCommonStore()
 
   const userState = reactive({
     username: '',
@@ -37,8 +39,9 @@
     return !fool
   })
 
-  const onLogin = () => {
+  const onLogin = async () => {
     userStore.$patch(userState)
+    commonStore.initialize()
     router.replace('/client')
   }
   onMounted(() => {

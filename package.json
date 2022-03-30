@@ -11,9 +11,12 @@
   "dependencies": {
     "@hairy/share": "^0.0.2",
     "@hairy/utils": "^1.0.19",
+    "@types/mockjs": "^1.0.6",
     "@vicons/ionicons5": "^0.12.0",
     "@vueuse/core": "^8.2.0",
+    "axios": "^0.26.1",
     "lodash": "^4.17.21",
+    "mockjs": "^1.1.0",
     "naive-ui": "^2.27.0",
     "pinia": "^2.0.12",
     "pinia-plugin-persist": "^1.0.0",

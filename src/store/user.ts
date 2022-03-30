@@ -2,10 +2,11 @@ import { defineStore, acceptHMRUpdate } from 'pinia'
 
 export const useUserStore = defineStore({
   id: '__user__',
+  persist: { enabled: true },
   state: () => ({
     username: '',
     password: '',
-    favorites: [] as string[]
+    favorites: [] as number[]
   }),
   actions: {},
   getters: {
