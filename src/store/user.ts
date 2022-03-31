@@ -10,7 +10,7 @@ export const useUserStore = defineStore({
   }),
   actions: {},
   getters: {
-    isLoading: (state) => {
+    isLogin: (state) => {
       const fool = state.username && state.password
       return !!fool
     }

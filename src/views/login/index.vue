@@ -49,7 +49,7 @@
     router.replace('/client')
   }
   onMounted(() => {
-    if (userStore.isLoading) {
+    if (userStore.isLogin) {
       router.replace('/client')
     }
   })

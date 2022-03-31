@@ -1,11 +1,58 @@
-# Vue 3 + Typescript + Vite
+## 项目说明
 
-This template should help get you started developing with Vue 3 and Typescript in Vite. The template uses Vue 3 `<script setup>` SFCs, check out the [script setup docs](https://v3.vuejs.org/api/sfc-script-setup.html#sfc-script-setup) to learn more.
+项目框架：vue3 + naive-ui + TypeScript + windicss
+地址：https://github.com/TuiMao233/zeam-demo
+Page：https://tuimao233.github.io/zeam-demo
 
-## Recommended IDE Setup
+## 项目使用
 
-- [VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=johnsoncodehk.volar)
+```
+# dev
+yarn dev
+# build
+yarn build
+```
 
-## Type Support For `.vue` Imports in TS
+## 项目目录
 
-Since TypeScript cannot handle type information for `.vue` imports, they are shimmed to be a generic Vue component type by default. In most cases this is fine if you don't really care about component prop types outside of templates. However, if you wish to get actual prop types in `.vue` imports (for example to get props validation when using manual `h(...)` calls), you can enable Volar's `.vue` type support plugin by running `Volar: Switch TS Plugin on/off` from VSCode command palette.
+```
+|-- .eslintignore        # cli/config
+|-- .eslintrc.js         # cli/config
+|-- .gitignore           # cli/config
+|-- commitlint.config.js # cli/config
+|-- components.d.ts      # volar 插件全局组件提示
+|-- index.html
+|-- package.json
+|-- prettier.config.js   # cli/config
+|-- README.md
+|-- tsconfig.json
+|-- vite.config.ts
+|-- windi.colors.ts      # 原子 css 配置
+|-- windi.config.ts      # 原子 css 配置
+|-- windi.utils.ts       # 原子 css 配置
+|-- yarn.lock
+|-- src                  # 源码目录
+|   |-- api              # 存放 API
+|   |-- components
+|       |-- button       # 按钮相关
+|       |-- control      # 控件相关
+|       |-- input        # 输入框相关
+|   |-- config           # 配置相关（theme.json）
+|   |-- layout           # 布局相关（客户端布局/桌面布局）
+|   |-- router           # 路由相关
+|   |-- setup            # app 挂载相关          
+|   |-- store            # 数据管理（pinia）
+|   |-- style            # 样式相关
+|   |-- typings          # 通用类型
+|   |-- views            # 视图层
+|-- .github              # actions 脚本
+|   |-- workflows
+|       |-- .build.yml
+|-- .husky
+|   |-- _
+|       |-- .gitignore
+|       |-- husky.sh
+|-- .vscode
+|   |-- extensions.json
+
+```

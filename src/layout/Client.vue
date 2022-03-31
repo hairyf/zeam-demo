@@ -9,13 +9,24 @@
 </template>
 
 <script lang="ts">
-  import { defineComponent } from 'vue-demi'
+  import { defineComponent, onMounted } from 'vue-demi'
   export default defineComponent({ name: 'ClientLayout' })
 </script>
 <script lang="ts" setup>
   import ClientHeader from './components/ClientHeader.vue'
   import ClientSidebar from './components/ClientSidebar.vue'
   import ClientBody from './components/ClientBody.vue'
+  import { useUserStore } from '@/store/user'
+  import { useRouter } from 'vue-router'
+
+  const userStore = useUserStore()
+  const router = useRouter()
+
+  onMounted(() => {
+    if (userStore.isLogin) {
+      router.replace('/login')
+    }
+  })
 </script>
 
 <style lang="scss" scoped>
