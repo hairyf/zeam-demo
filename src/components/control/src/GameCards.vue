@@ -79,7 +79,6 @@
     @apply w-200px absolute bg-dark-50 top-0 overflow-hidden;
     .grass {
       @apply absolute inset-0;
-      background-image: url(var(--thumbnail));
       background-position: center;
       background-size: cover;
       filter: blur(20px);

@@ -12,6 +12,7 @@ import { NaiveUiResolver } from 'unplugin-vue-components/resolvers'
 // https://vitejs.dev/config/
 export default defineConfig(({ mode }) => {
   const config: UserConfigExport = {
+    base: '/zeam-demo/',
     resolve: {
       alias: { '@': path.resolve(__dirname, 'src') }
     },
