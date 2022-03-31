@@ -2,11 +2,32 @@
 
 项目框架：vue3 + naive-ui + TypeScript + windicss
 
+项目部署：通过 github action，自动部署 github pages 服务
+
 ![1648709530](public/1648709530.jpg)
 
 地址：https://github.com/TuiMao233/zeam-demo
 
 Page：https://tuimao233.github.io/zeam-demo
+
+为什么是 windicss？
+
+> When my project became larger and there were about dozens of components, the initial compilation time reached 3s, and hot updates took more than 1s with Tailwind CSS. - @voorjaar
+
+以及 [Auto-infer](https://windicss.org/features/value-auto-infer.html)
+
+```html
+<!-- sizes and positions -->
+<div class="p-5px mt-[0.3px]"></div>
+
+<!-- colors -->
+<button class="bg-hex-b2a8bb"></button>
+<button class="bg-[#b2a8bb]"></button>
+<button class="bg-[hsl(211.7,81.9%,69.6%)]"></button>
+
+<!-- grid template -->
+<div class="grid-cols-[auto,1fr,30px]"></div>
+```
 
 ## 项目使用
 
