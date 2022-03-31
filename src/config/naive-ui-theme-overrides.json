@@ -1,0 +1,13 @@
+{
+  "Dropdown": {
+    "padding": "4px",
+    "optionIconSizeSmall": "12px",
+    "fontSizeMedium": "12px",
+    "optionHeightMedium": "20px",
+    "color": "#3C4046FF",
+    "optionTextColor": "#91999CFF",
+    "optionTextColorHover": "#AFBBC0FF",
+    "optionTextColorActive": "#18a058",
+    "optionColorHover": "#5A6069FF"
+  }
+}

@@ -2,7 +2,10 @@ import { Game } from '@/typings'
 import * as mocks from './index.mock'
 import axios from 'axios'
 
-axios.defaults['baseURL'] = 'https://www.freetogame.com'
+if (import.meta.env.PROD) {
+  axios.defaults['baseURL'] = 'https://www.freetogame.com'
+}
+
 export const getGames = () => {
   return axios.get<Game[]>('/api/games').catch(mocks.getGames)
 }

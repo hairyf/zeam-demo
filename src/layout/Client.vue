@@ -20,7 +20,7 @@
 
 <style lang="scss" scoped>
   .container {
-    @apply w-80vw min-w-700;
+    @apply w-80vw min-w-700 overflow-hidden;
     @apply rounded-md bg-[#1B1E23];
     border: solid 1px #bdbdbd;
   }

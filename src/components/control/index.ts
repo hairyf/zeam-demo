@@ -1,1 +1,2 @@
-export { default as ZGameCard } from './src/GameCard.vue'
+export { default as ZGameCards } from './src/GameCards.vue'
+export { default as ZRightManual } from './src/RightManual.vue'
