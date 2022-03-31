@@ -23,7 +23,7 @@
   const router = useRouter()
 
   onMounted(() => {
-    if (userStore.isLogin) {
+    if (!userStore.isLogin) {
       router.replace('/login')
     }
   })
